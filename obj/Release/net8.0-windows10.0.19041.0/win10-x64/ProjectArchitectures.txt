@@ -1,0 +1,1 @@
+C:\Users\nazba\source\repos\notes_app_maui\notes_app_maui.csproj;x64

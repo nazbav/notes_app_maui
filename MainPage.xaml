@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="notes_app_maui.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            x:Name="LayoutPage"
+            Padding="30,0"
+            Spacing="25">
+
+            <StackLayout>
+                <Label>Сервер записей:</Label>
+            <Entry x:Name="url" Text="http://f927507p.beget.tech/api.php"/>
+            <Button Text="Получить заметки" Clicked="getNotesButton"/>
+            </StackLayout>
+            
+            <StackLayout x:Name="StackLayoutBlock"></StackLayout>
+
+            <StackLayout>
+            <Label>Добавить новую заметку:</Label>
+            <Editor AutoSize="TextChanges" x:Name="newNoteText" Placeholder="Введите текст заметки"/>
+            <Button Text="Добавить заметку" Clicked="OnAddNoteButtonClicked"/>
+            </StackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
